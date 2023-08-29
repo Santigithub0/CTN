@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/node_modules/bootstrap-icons/font/bootstrap-icons.css">
+  <link href="/dist/output.css" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <nav class="bg-slate-900 h-20 w-full fixed">
+      <input type="checkbox" id="check" hidden>
+      <label for="check" class="float-right text-white text-3xl leading-[80px] mr-10 lg:hidden">
+        <i class="bi bi-list"></i>
+      </label>
+      <label class="text-white leading-[80px] md:leading-[80px] pl-12 md:pl-24 text-3xl">Navigation</label>
+      <ul
+        class="float-right mr-10 lg:flex leading-[80px] space-x-4 text-white uppercase fixed lg:relative h-[100vh] lg:h-0 w-[100%] lg:w-fit top-20 lg:top-0 left-[-100%] lg:left-0 transition-all duration-300 lg:transition-none text-center bg-slate-900">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="container"></main>
+
+
+  <script src="app.js"></script>
+</body>
+
+</html>
+
+<!-- npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch -->
