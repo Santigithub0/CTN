@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 ul li a{
-    @apply rounded py-[7px] px-[13px] text-[17px] hover:bg-slate-300 transition-all duration-300
+    @apply rounded py-[7px] px-[13px] text-[17px] hover:bg-white hover:text-black transition-all duration-300
 }
 
 #check:checked ~ ul{
@@ -13,4 +13,39 @@ ul li a{
 
 #check:not(:checked) ~ ul {
     transition: all .3s;
+}
+
+body{
+    background: #000;
+}
+
+.navbar{
+    position: sticky;
+    top: 0;
+    transition: .5s linear;
+}
+
+.buttonHero{
+    @apply rounded py-[7px] px-[13px] text-[17px] hover:bg-white hover:text-black hover:text-[20px] transition-all duration-300
+}
+
+.buttonHero:hover{
+    box-shadow: 2px 2px 15px 2px black;
+}
+
+.navbar.scrolled{
+    background-color: #fff; /* Nuevo color de fondo cuando se hace scroll */
+    color: #000;
+}
+
+.navbar.scrolled ul li a{
+    @apply hover:bg-black hover:text-white lg:text-black
+}
+
+.navbar.scrolled .logo{
+    color: #000;
+}
+
+.navbar.scrolled .barraMenu{
+    color: #000
 }
