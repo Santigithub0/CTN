@@ -554,14 +554,6 @@ video {
   margin-right: 2.5rem;
 }
 
-.mt-10 {
-  margin-top: 2.5rem;
-}
-
-.mt-20 {
-  margin-top: 5rem;
-}
-
 .hidden {
   display: none;
 }
@@ -606,11 +598,6 @@ video {
   line-height: 2.25rem;
 }
 
-.text-4xl {
-  font-size: 2.25rem;
-  line-height: 2.5rem;
-}
-
 .uppercase {
   text-transform: uppercase;
 }
@@ -627,6 +614,11 @@ video {
 .text-blue-500 {
   --tw-text-opacity: 1;
   color: rgb(59 130 246 / var(--tw-text-opacity));
+}
+
+.text-green-500 {
+  --tw-text-opacity: 1;
+  color: rgb(34 197 94 / var(--tw-text-opacity));
 }
 
 .text-red-500 {
@@ -647,6 +639,16 @@ video {
 
 .duration-300 {
   transition-duration: 300ms;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  scroll-behavior: smooth;
 }
 
 .ul .li .a {
@@ -682,7 +684,8 @@ body{
 }
 
 .heroSection{
-  margin-bottom: 50px;
+  margin-top: 100px;
+  margin-bottom: 150px;
 }
 
 .navbar{
@@ -722,6 +725,7 @@ body{
 .tituloServicios{
   text-align: center;
   font-size: 45px;
+  font-weight: 500;
 }
 
 .cards-container {
@@ -750,20 +754,105 @@ body{
 
 .lineaTitulo1{
   border-width: 2px;
-  width: 50px;
+  width: 70px;
   margin-left: auto;
   margin-right: auto;
-  border-color: rgb(59 130 246 / 0.5);
+  border-color: rgb(59 130 246 / 1);
   margin-bottom: 3rem;
 }
 
 .lineaTitulo2{
   border-width: 2px;
-  width: 50px;
+  width: 70px;
   margin-left: auto;
   margin-right: auto;
-  border-color: rgb(239 68 68 / 0.5);
+  border-color: rgb(239 68 68 / 1);
   margin-bottom: 3rem;
+}
+
+.lineaTitulo3{
+  border-width: 2px;
+  width: 70px;
+  margin-left: auto;
+  margin-right: auto;
+  border-color: rgb(34 197 94 / 1);
+  margin-bottom: 3rem;
+}
+
+.tituloArticulos{
+  text-align: center;
+  font-size: 45px;
+}
+
+.lineaTitulo4{
+  border-width: 2px;
+  width: 70px;
+  margin-left: auto;
+  margin-right: auto;
+  border-color: rgb(0 0 0 / 1);
+  margin-bottom: 3rem;
+}
+
+.imgCards{
+  margin: 0 auto;
+}
+
+.tituloCardsArticulos{
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 2rem;
+}
+
+.cards-containerArticulos{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 60px;
+}
+
+.cardsArticulos{
+  background-color: #ffffff;
+  box-shadow: 1px 1px 10px 1px #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  text-align: center;
+  font-size: 15px;
+  width: 350px;
+}
+
+.heroContainer{
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.cajas{
+  width: 500px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.imgHero{
+  border-radius: 20px;
+}
+
+.tituloHero {
+  font-size: 30px;
+}
+
+@media (min-width: 1024px) {
+  .tituloHero {
+    font-size: 40px;
+  }
+}
+
+.parrafoHero{
+  margin-top: 3rem;
+  font-size: 20px;
+  font-weight: 400;
 }
 
 @media (min-width: 768px) {
