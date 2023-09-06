@@ -1,12 +1,14 @@
-const mostrarArticulos = document.getElementById('contenedorArticulos');
+const mostrarArticulos = document.getElementById("contenedorArticulos");
 
-const div = document.createElement('div');
-div.classList.add('cards-containerArticulos');
-div.innerHTML += `
+articulos.forEach((articulo) => {
+  const div = document.createElement("div");
+  div.classList.add("cards-containerArticulosPage");
+  div.innerHTML += `
                     <div class="cardsArticulos">
-                        <img class="imgCards" src="/public/images/articulo1.png">
-                        <h3 class="tituloCardsArticulos">Blanqueo de capitales – ¿conviene o no? cuestiones prácticas</h3>
-                        <p></p>
+                        <img class="imgCards" src="${articulo.imagen}">
+                        <h3 class="tituloCardsArticulos">${articulo.titulo}</h3>
+                        <button class="botonArticulos">Ver más</button>
                     </div>
                 `;
-mostrarArticulos.appendChild(div);
+  mostrarArticulos.appendChild(div);
+});

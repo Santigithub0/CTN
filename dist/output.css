@@ -855,6 +855,25 @@ body{
   font-weight: 400;
 }
 
+.botonArticulos{
+  background: #000;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+.contenedorArticulos{
+  display: inline-block
+}
+
+.cards-containerArticulosPage{
+  display: inline-block;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+}
+
 @media (min-width: 768px) {
   .md\:pl-24 {
     padding-left: 6rem;
