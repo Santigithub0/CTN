@@ -167,7 +167,6 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    text-align: center;
 }
 
 .imgHero{
@@ -175,13 +174,29 @@ body{
 }
 
 .tituloHero{
-    @apply lg:text-[40px] text-[30px];
+    @apply lg:text-[30px] text-[20px] lg:font-[500] font-[500];
 }
 
 .parrafoHero{
+    @apply lg:text-[20px] text-[14px] lg:font-[300] font-[300];
     margin-top: 3rem;
-    font-size: 20px;
-    font-weight: 400;
+}
+
+.botonHero{
+    background: #000;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 10px;
+    width: fit-content;
+    transition: .2s linear;
+}
+
+.botonHero:hover{
+    background: #fff;
+    color: #000;
+    border: 1px solid #000;
+    box-shadow: 0.1px 0.1px 10px 0.1px #000;
+    scale: 1.1;
 }
 
 .botonArticulos{
@@ -189,6 +204,12 @@ body{
     color: #fff;
     padding: 10px 20px;
     border-radius: 10px;
+    transition: .3s linear;
+}
+
+.botonArticulos:hover{
+    background: #ccc;
+    color: #000;
 }
 
 .contenedorArticulos{
@@ -201,4 +222,80 @@ body{
     margin-right: 5%;
     margin-top: 5rem;
     margin-bottom: 2rem;
+}
+
+#contacto {
+background-color: #f4f4f4;
+padding: 50px 150px;
+}
+
+.contactoContainer {
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.cajasForm {
+flex-basis: 48%;
+}
+
+form {
+background-color: #ffffff;
+padding: 20px;
+border-radius: 5px;
+box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.labelForm {
+display: block;
+margin-bottom: 5px;
+font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+width: 100%;
+padding: 10px;
+margin-bottom: 10px;
+border: 1px solid #ccc;
+border-radius: 3px;
+}
+
+input[type="submit"] {
+background-color: #007bff;
+color: #fff;
+padding: 10px 20px;
+border: none;
+border-radius: 3px;
+cursor: pointer;
+transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+background-color: #0056b3;
+}
+
+.cajasForm p {
+margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+#contacto {
+    padding: 50px 30px;
+}
+
+.contactoContainer {
+    flex-direction: column;
+    align-items: center;
+}
+
+.cajasForm {
+    flex-basis: 100%;
+    margin-bottom: 20px;
+}
+
+form {
+    max-width: 100%;
+}
 }
