@@ -7,7 +7,7 @@ articulos.forEach((articulo) => {
                     <div class="cardsArticulos">
                         <img class="imgCards" src="${articulo.imagen}">
                         <h3 class="tituloCardsArticulos">${articulo.titulo}</h3>
-                        <a href="#" class="botonArticulos">Ver más</a>
+                        <a href="${articulo.url}" class="botonArticulos">Ver más</a>
                     </div>
                 `;
   mostrarArticulos.appendChild(div);
